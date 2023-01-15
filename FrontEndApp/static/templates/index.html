@@ -1,0 +1,189 @@
+{% load static %} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+    crossorigin="anonymous"g
+  />
+
+    <title>Tu Educación Alternativa</title>
+</head>
+
+<!--Navbar Section-->
+<body>
+    <nav class="nav">
+        <div class="navbar">
+            <div class="navbar__container" id="navbar_logo">Tu Educación Alternativa</div>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span> 
+                <span class="bar"></span>   
+                <span class="bar"></span>
+            </div>
+            <ul class="menu">
+                <li class = "navbar__items" id="item1"><a href="#home" class="links">home</a></li>
+                <li class = "navbar__items" id="item2"><a href="#about" class="links">about</a></li>
+                <li class = "navbar__items" id="item3"><a href="#services" class="links">services</a></li>
+                <li class = "navbar__btn"><a href="#sign_up" class="links_btn">sign up</a></li>
+                <div id="formulario">
+                    <ul>
+                        <form action="" method="POST">
+                        {% csrf_token %}
+                        <li>Nombre<input type="text" name="" id=""></li>
+                        <li>celular<input type="text" name="" id=""></li>
+                        <li>mail<input type="text" name="" id=""></li>
+                        <input type="submit" value="Quiero Iniciar Inglés" id="btn_Inglés">
+                        </form>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    
+<!-- Hero Section -->
+<div class="hero" id="home">
+    <div class="hero__container">
+        <h1 class="hero__heading"><span>Elige Tu Curso</span></h1>
+        <p class="hero__description">Unlimited Possibilities</p>
+        <button class="main__btn"><a href="#">Explore</a></button>
+    </div>
+</div>
+
+<!--About Section-->
+<div class="main" id="about">
+    <div class="main__container">
+        
+        <div class="main__img--container">
+            <div class="main__img--card"><i class="fa-brands fa-free-code-camp"></i></div>
+        </div>
+
+        <div class="main__content">
+            <h1>
+                What do we do?
+            </h1>
+            <h2>We help businesses scale</h2>
+            <p>schedule a call to learn more about our services</p>
+            <button class="main__btn"><a href="#">Schedule Call</a></button>
+        </div>
+
+    </div>
+</div>
+
+<!--Services Section-->
+<div class="services" id="services">
+    <h1>Our Services</h1>
+    <div class="services__wrapper">
+        <div class="services__card">
+            <h2>Custom Colorways</h2>
+            <p>AI Powered Technology</p>
+            <div class="services__btn"><button>Get Started</button></div>
+        </div>
+
+        <div class="services__card">
+            <h2>Are you ready</h2>
+            <p>AI Powered Technology</p>
+            <div class="services__btn"><button>Get Started</button></div>
+        </div>
+
+        <div class="services__card">
+            <h2>Full Gradients</h2>
+            <p>AI Powered Technology</p>
+            <div class="services__btn"><button>Get Started</button></div>
+        </div>
+
+        <div class="services__card">
+            <h2>Infinite choices</h2>
+            <p>AI Powered Technology</p>
+            <div class="services__btn"><button>Get Started</button></div>
+        </div>
+    </div>
+</div>
+
+<!--Feature Section-->
+<div class="main" id="sign_up">
+    <div class="main__container">
+        <div class="main__content">
+            <h1>
+               Join our Team
+            </h1>
+            <h2>Sign up Today</h2>
+            <p>see what makes us different</p>
+            <button class="main__btn"><a href="#">Sign up</a></button>
+        </div>
+        <div class="main__img--container">
+            <div class="main__img--card" id="card-1"><i class="fas fa-users"></i></div>
+        </div>
+
+        
+
+    </div>
+</div>
+
+
+<!--Footer Section-->
+<div class="footer_container">
+    <div class="footer__links">
+        <div class="footer__link--wrapper">
+            <div class="footer__link__items">
+                <h2>About Us</h2>
+                <a href="/sign-up">How it Works</a>
+                <a href="/sign-up">Testimonials</a>
+                <a href="/sign-up">careers</a>
+                <a href="/sign-up">Terms of service</a>
+            </div>
+            <div class="footer__link__items">
+                <h2>About Us</h2>
+                <a href="/sign-up">How it Works</a>
+                <a href="/sign-up">Testimonials</a>
+                <a href="/sign-up">careers</a>
+                <a href="/sign-up">Terms of service</a>
+            </div>
+            </div>
+
+            <div class="footer__link--wrapper">
+            <div class="footer__link__items">
+                <h2>About Us</h2>
+                <a href="/sign-up">How it Works</a>
+                <a href="/sign-up">Testimonials</a>
+                <a href="/sign-up">careers</a>
+                <a href="/sign-up">Terms of service</a>
+            </div>
+            <div class="footer__link__items">
+                <h2>About Us</h2>
+                <a href="/sign-up">How it Works</a>
+                <a href="/sign-up">Testimonials</a>
+                <a href="/sign-up">careers</a>
+                <a href="/sign-up">Terms of service</a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <section class="Social Media">
+        <div class="social__media--wrap">
+            <div class="footer_logo">
+                <a href="" id="footer_logo">COLOR</a>
+            </div>
+            <p class="wwebsite__rights">@ COLOR 2023 All Rights RESERVED</p>
+            <div class="social__icons">
+                <a href="" class="social__icons--links"><i class ="fab fa-facebook"></i></a>
+                <a href="" class="social__icons--links"><i class ="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+</div>
+
+</body>
+<script src="{% static 'js/app.js' %}">
+</script>
+
+</html>
